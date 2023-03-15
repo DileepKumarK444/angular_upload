@@ -1,0 +1,37 @@
+<form >
+    <div class="col-sm-6" style="margin: 50px">
+      <div class="mb-3">
+        <label htmlFor="name" class="form-label">
+          Name
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+          
+        />
+      </div>
+
+      <div class="mb-3">
+        <label htmlFor="formFile" class="form-label">
+          Select Image
+        </label>
+        <input
+          
+          class="form-control"
+          type="file"
+          id="image"
+          name="image"
+          (change)="onChange($event)"
+        />
+      </div>
+      <button type="button" (click)="handleSubmit()" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </form>
+  <!-- <div class="col-sm-6" style="margin: 50px"> -->
+
+    <app-gallery  [someInput]="data"  class="d-flex flex-wrap "></app-gallery>
+    <!-- </div> -->

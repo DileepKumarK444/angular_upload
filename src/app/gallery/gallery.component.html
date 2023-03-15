@@ -1,0 +1,13 @@
+
+
+<div *ngFor="let image of images" class=" p-3 align-self-center">
+    
+        <img
+          style="width: 150px"
+          key={item.id}
+          src="{{'http://127.0.0.1:8000/uploads/'+image.image_name}}"
+          alt="..."
+          className="img-thumbnail"
+        />
+  
+</div>
